@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-https://douhoonkwark.github.io/Lab2_Starter/
+https://douhoonkwark.github.io/fa22-cse110-lab3/
