@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="format.css">
         <meta name="author" content="dou hoon kwark">
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minutes to the sample meeting</title>
         <link rel="icon" href="image.ico" >
+        <style>
+            
+        </style>
     </head>
     <body>
         <h1>Minutes of meeting on Oct 6th</h1>
-        <hr>
+        
         <header class="page-header">
             <nav>
                 <ul>
-                    <li><a href="#">Minutes</a></li>
-                    <li><a href="https://github.com/douhoonkwark">Github</a></li>
-                    <li><a href="#first">First Phase</a></li>
+                    <li class="toc"><a href="#">Minutes</a></li>
+                    <li class="toc"><a href="https://github.com/douhoonkwark">Github</a></li>
+                    <li class="toc"><a href="#first">First Phase</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <hr>
+
+        <audio id="mus" src="memories.mp3" controls>
+            <a href="memories.mp3">download the audio</a>
+        </audio>    
+
+        <main id="main-grid">
+
             <section id="first">
                 <h2>First Phase </h2>
+                <h3>Bus factor</h3>
             </section>
 
-            <audio src="memories.mp3" controls>
-                <a href="memories.mp3">download the audio</a>
-            </audio>
-            <p>Background Music by <a href="https://www.bensound.com">https://www.bensound.com:</a></p>
+            <section id="bus">
+                <img src="bus.jpg" alt="bus" width="200">
+            </section>
 
+            <section id="bus-text">
+                <p id="bus-describ"><b class="term"><i>Bus factor</i></b> is "a measurement of the risk resulting from information and capabilities 
+                    <strong>not being shared among team members</strong>." from <a href="https://en.wikipedia.org/wiki/Bus_factor">Wikipedia</a></p>
+            </section>
 
-            <h3>Bus factor</h3>
-            <img src="bus.jpg" alt="bus" width="200" >
-            <p><b class="term"><i>Bus factor</i></b> is "a measurement of the risk resulting from information and capabilities 
-                <strong>not being shared among team members</strong>." from <a href="https://en.wikipedia.org/wiki/Bus_factor">Wikipedia</a></p>
-            <ul>
-                <li>how many members?</li>
-                <li>roles
-                    <ul>
-                        <li>Tead Leads? 2 </li>
-                        <li>Designer? 1</li>
-                        <li>Planner? 1</li>
-                        <li>Developers? 5</li>
-                    </ul>
-                </li>
-            </ul>
+            <section id="member">
+                <ul>
+                    <li>how many members?</li>
+                    <li>roles
+                        <ul>
+                            <li>Tead Leads? 2 </li>
+                            <li>Designer? 1</li>
+                            <li>Planner? 1</li>
+                            <li>Developers? 5</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-            <h4>Plans to avoid having only 1 or 2 bus factors</h4>
-            <ol>
-                <li>Share the updated information as much as possible.</li>
-                <li>Check the slack often</li>
-                <li>Do not try to take too much workload because everyone needs to get their hands on the actual workload<br>
-                    so that they also get some sense of what is going on in the development. </li>
-            </ol>
+            <section id="first1">
+                <h4>Plans to avoid having only 1 or 2 bus factors</h4>
+                <ol>
+                    <li>Share the updated information as much as possible.</li>
+                    <li>Check the slack often</li>
+                    <li>Do not try to take too much workload because everyone needs to get their hands on the actual workload<br>
+                        so that they also get some sense of what is going on in the development. </li>
+                </ol>
+            </section>
 
-            <h2>Second Phase</h2>
+            <section id="second1">
+                <h2>Second Phase</h2>
                 <p><b>plans to do next week </b></p>
                 <ol>
                     <li><b>Management</b> - <em>Group Bonding Event</em></li>
@@ -63,72 +79,83 @@
                     <li><b>Management</b> - <em>Branding, Group Page and Video</em></li>
                     <li><b>Management</b> - <em>Group Contract</em></li>
                 </ol>
-            <br>
-            <h4>To finish the plans</h4>
-            <ul>
-                <li>We have concluded that we need to meet at least twice next week.</li>
-                <li>In the first meeting on the next week, we will estimate the time and days needed to complete the given tasks<br>
-                and reschedule the future tasks if needed.</li>
-            </ul>
-            <br>
-            <h2>Last phase / Conclusion</h2>
-            <ul>
-                <li>Do not pass one's responsibility to others</li>
-                <li>Puntuality</li>
-                <li>Keep in mind that it is teamwork</li>
-            </ul>
+                <br>
+            </section>
 
-            <br>
+            <section id="second2">
+                <h4>To finish the plans</h4>
+                <ul>
+                    <li>We have concluded that we need to meet at least twice next week.</li>
+                    <li>In the first meeting on the next week, we will estimate the time and days needed to complete the given tasks<br>
+                    and reschedule the future tasks if needed.</li>
+                </ul>
+                <br>
+            </section>
+
+            <section id="last">
+                <h2>Last phase / Conclusion</h2>
+                <ul>
+                    <li>Do not pass one's responsibility to others</li>
+                    <li>Puntuality</li>
+                    <li>Keep in mind that it is teamwork</li>
+                </ul>
+                <br>
+            </section>
+            
+            <section id="extra">
+                <details>
+                    <summary>Minutes writer's contact info</summary>
+                    <p>Name: Dou Hoon Kwark<br>
+                    Email: dkwark@ucsd.edu
+                    </p>
+                </details>
+            
+                <p><i>Job 8:7</i> Though beginning seems humble future will be prosperous</p>
+                <video controls width="250">
+                    <source src="flower.mp4"
+                            type="video/webm">
+                </video>
+                <br>
+                <br>
+            </section>
+
+            <section id="extra2">
+                <form method="post">
+                    <fieldset>
+                        <legend>Was it useful?</legend>
+                        <textarea name="textarea" rows="5" cols="30" placeholder="From this point, The content below is not for minutes."></textarea>
+                        <label><input type="radio" name="radio" value="yes" > Yes</label>
+                        <label><input type="radio" name="radio" value="no" > no</label>
+                        <button>submit</button>
+                    </fieldset>
+                    <label for="tick">Temperature:</label>
+                    <input type="range" list="tickmarks" min="-100" max="100" id="tick" name="tick" >
+                    <datalist id="tickmarks">
+                        <option value="-80"></option>
+                        <option value="-60"></option>
+                        <option value="-40"></option>
+                        <option value="0"></option>
+                        <option value="40"></option>
+                        <option value="60"></option>
+                        <option value="80"></option>
+                    </datalist>
+                    <select name="choice">
+                        <option value="first">hot</option>
+                        <option value="second" selected>cold</option>
+                        <option value="third">mediocre</option>
+                    </select>
+                </form>
                 
-            <details>
-                <summary>Minutes writer's contact info</summary>
-                <p>Name: Dou Hoon Kwark<br>
-                   Email: dkwark@ucsd.edu
-                </p>
-            </details>
-            
-            
-            <p><i>Job 8:7</i> Though beginning seems humble future will be prosperous</p>
-            <video controls width="250">
-                <source src="flower.mp4"
-                        type="video/webm">
-            </video>
-            <br>
-            <br>
-            <form method="post">
-                <fieldset>
-                    <legend>Was it useful?</legend>
-                    <textarea name="textarea" rows="5" cols="30" placeholder="From this point, The content below is not for minutes."></textarea>
-                    <label><input type="radio" name="radio" value="yes" > Yes</label>
-                    <label><input type="radio" name="radio" value="no" > no</label>
-                    <button>submit</button>
-                </fieldset>
-                <label for="tick">Temperature:</label>
-                <input type="range" list="tickmarks" min="-100" max="100" id="tick" name="tick" >
-                <datalist id="tickmarks">
-                    <option value="-80"></option>
-                    <option value="-60"></option>
-                    <option value="-40"></option>
-                    <option value="0"></option>
-                    <option value="40"></option>
-                    <option value="60"></option>
-                    <option value="80"></option>
-                </datalist>
-                <select name="choice">
-                    <option value="first">hot</option>
-                    <option value="second" selected>cold</option>
-                    <option value="third">mediocre</option>
-                </select>
-            </form>
-            
-            <hr>
-                <p><span>This will be redone using CSS.</span></p>
-            <div class="shadowbox">
-                <p>This line will be worked with CSS.</p>
-            </div>
+                <hr>
+                    <p><span>This will be redone using CSS.</span></p>
+                <div class="shadowbox">
+                    <p>This line will be worked with CSS.</p>
+                </div>
+            </section>
         </main>
         
         <footer>
+            <p>Background Music by <a href="https://www.bensound.com">https://www.bensound.com:</a></p>
             <p>Credit: 2022 Fall CSE 110 Dou Hoon Kwark</p>
         </footer>
     </body>

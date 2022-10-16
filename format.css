@@ -1,0 +1,217 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+
+@font-face {
+    font-family: personal-font;
+    src: url(Gaegu-Regular.ttf);
+}
+
+body{
+    background-color: #ADD8E6;
+    font-family: personal-font;
+}
+
+h1{
+    background-color: rgb(120, 120, 197);
+    color: 	rgb(225, 255, 255);
+    font-size: 13mm;
+    padding: 0.2em;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+h2{
+    color: hsl(36, 79%, 57%);
+    font-size: 0.3in;
+    border: 2px solid black;
+    padding: 0.2em;
+    width: 300px;
+    
+}
+
+h3{
+    color: indigo;
+    font-size: 1.35em;
+    border: 2px solid black;
+    padding: 0.2em;
+}
+
+h4{
+    color: saddlebrown;
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 0.2em;
+}
+
+.term{
+    font-size: 1.5vw;
+    border: 2px solid black;
+    padding: 0.2em;
+}
+
+/* set the basic colors */
+/* 
+.toc{
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.toc1{
+    border: 2px solid black;
+}
+
+.toc2{
+    border: 2px solid black;
+}
+
+.toc3{
+    border: 2px solid black;
+} */
+
+.page-header{
+    font-size: 2.3ch;
+    border: 2px solid black;
+    position: sticky;
+    top: 5px;
+
+    background-color: rgb(71, 111, 230);
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    height: 30px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.toc a {
+    margin-bottom: 10px;
+    background-color: rgb(16, 56, 106);
+    color: rgb(199, 124, 124);
+    text-decoration-line: overline underline;
+    text-decoration-color: rgb(255, 253, 253);
+}
+
+a:hover {
+    background-color: rgb(184, 18, 18);
+}
+
+a:active {
+    background-color: gray;
+}
+ 
+#first{
+    border: 2px solid black;
+    top: 130px;
+
+}
+
+#main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 6;
+}
+
+#mus{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+#first{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid black;
+}
+
+#bus{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 2px solid black;
+    width: 200px;
+}
+
+#bus-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#bus-describ{
+    border: 2px solid black;
+    width: 20vw;
+    margin-right: -50px;
+}
+
+#member{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 2px solid black;
+}
+
+#first1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid black;
+}
+
+#second1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 2px solid black;
+}
+
+#second2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 2px solid black;
+}
+
+#last{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    border: 2px solid black;
+    height: 160px;
+}
+
+#extra{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    border: 2px solid black;
+}
+
+#extra2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8; 
+    border: 2px solid black;
+}
