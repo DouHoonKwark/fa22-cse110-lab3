@@ -7,13 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minutes to the sample meeting</title>
         <link rel="icon" href="image.ico" >
+
         <style>
-            
+            span {
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: white;
+                }
+            }
         </style>
+
     </head>
     <body>
         <h1>Minutes of meeting on Oct 6th</h1>
-        
+
         <header class="page-header">
             <nav>
                 <ul>
@@ -43,7 +53,7 @@
 
             <section id="bus-text">
                 <p id="bus-describ"><b class="term"><i>Bus factor</i></b> is "a measurement of the risk resulting from information and capabilities 
-                    <strong>not being shared among team members</strong>." from <a href="https://en.wikipedia.org/wiki/Bus_factor">Wikipedia</a></p>
+                    <strong id="emp">not being shared among team members."</strong> from <a id="wiki" href="https://en.wikipedia.org/wiki/Bus_factor">Wikipedia</a></p>
             </section>
 
             <section id="member">
@@ -147,16 +157,17 @@
                 </form>
                 
                 <hr>
-                    <p><span>This will be redone using CSS.</span></p>
+                
+                <p><span>This will be redone using CSS.</span></p>
                 <div class="shadowbox">
-                    <p>This line will be worked with CSS.</p>
+                    <p>This line will be worked with CSS. (It does not show up on the website this time)</p>
                 </div>
             </section>
         </main>
         
         <footer>
             <p>Background Music by <a href="https://www.bensound.com">https://www.bensound.com:</a></p>
-            <p>Credit: 2022 Fall CSE 110 Dou Hoon Kwark</p>
+            <p style="color:blue;text-align:center;">Credit: 2022 Fall CSE 110 Dou Hoon Kwark</p>
         </footer>
     </body>
 </html>

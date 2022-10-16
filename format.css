@@ -9,80 +9,71 @@
     src: url(Gaegu-Regular.ttf);
 }
 
-body{
+body {
     background-color: #ADD8E6;
     font-family: personal-font;
 }
 
-h1{
+h1 {
     background-color: rgb(120, 120, 197);
     color: 	rgb(225, 255, 255);
     font-size: 13mm;
     padding: 0.2em;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin: auto;
     border: 2px solid black;
+    border-radius: 0.3em;
     text-align: center;
 }
 
 
-h2{
+h2 {
     color: hsl(36, 79%, 57%);
+    background-color: rgb(46, 114, 114);
     font-size: 0.3in;
     border: 2px solid black;
+    border-radius: 0.3em;
     padding: 0.2em;
     width: 300px;
-    
+    text-align: center;
+    margin-bottom: 0.5em;
+    min-width: 100px;
 }
 
-h3{
+h3 {
     color: indigo;
     font-size: 1.35em;
-    border: 2px solid black;
     padding: 0.2em;
 }
 
-h4{
+h4 {
     color: saddlebrown;
     font-size: 18px;
-    border: 2px solid black;
     padding: 0.2em;
 }
 
-.term{
+.term {
     font-size: 1.5vw;
-    border: 2px solid black;
+    color:rgb(160, 28, 100);
     padding: 0.2em;
+    min-width: 100px;
+}
+
+.wiki {
+    font-size: 5vw;
 }
 
 /* set the basic colors */
-/* 
-.toc{
-    border: 2px solid black;
-    display: inline-block;
-}
 
-.toc1{
-    border: 2px solid black;
-}
 
-.toc2{
-    border: 2px solid black;
-}
-
-.toc3{
-    border: 2px solid black;
-} */
-
-.page-header{
+.page-header {
     font-size: 2.3ch;
     border: 2px solid black;
     position: sticky;
     top: 5px;
 
     background-color: rgb(71, 111, 230);
+    border-radius: 0.3em;
+    margin: 0.1em;
     padding: 0.2em 0.2em 0.2em 0.2em;
     height: 30px;
 }
@@ -98,6 +89,12 @@ nav > ul {
 .toc a {
     margin-bottom: 10px;
     background-color: rgb(16, 56, 106);
+    border: 2px solid black;
+    border-radius: 0.3em;
+    padding-top: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 0.1em;
+    padding-left: 0.2em;
     color: rgb(199, 124, 124);
     text-decoration-line: overline underline;
     text-decoration-color: rgb(255, 253, 253);
@@ -111,107 +108,133 @@ a:active {
     background-color: gray;
 }
  
-#first{
-    border: 2px solid black;
-    top: 130px;
 
-}
-
-#main-grid{
+#main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 6;
 }
 
-#mus{
+#mus {
     position: fixed;
     right: 10px;
     bottom: 20px;
 }
 
-#first{
+#first {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    border: 2px solid black;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
 }
 
-#bus{
+#bus {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 2px solid black;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
     width: 200px;
+    min-width: 200px;
+    max-width: 200em;
+    
 }
 
-#bus-text{
+#bus-text {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width: 350px;
 }
 
-#bus-describ{
-    border: 2px solid black;
-    width: 20vw;
-    margin-right: -50px;
+#emp {
+    text-decoration: green wavy underline;
+    display: block;
 }
 
-#member{
+#bus-describ {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: -70px; 
+}
+
+#member {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 2px solid black;
+    margin-left: 0.5em;
 }
 
-#first1{
+#first1 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    border: 2px solid black;
+    margin-bottom: 15px;
+    margin-left: 0.5em;
 }
 
-#second1{
+#second1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    border: 2px solid black;
+    margin-top: 3em;
+    margin-left: 0.5em;
 }
 
-#second2{
+#second2 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-    border: 2px solid black;
+    margin-top: 7em;
+    margin-left: 0.5em;
 }
 
-#last{
+#last {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6; 
-    border: 2px solid black;
     height: 160px;
+    margin: 3em 0.5em 3em 0.5em;
 }
 
-#extra{
+#extra {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 7; 
-    border: 2px solid black;
+    margin-left: 0.5em;
 }
 
-#extra2{
+#extra2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 8; 
-    border: 2px solid black;
+    margin-left: 0.5em;
+    margin-right: 100px;
+    max-width: 500px;
+    min-width: 150px;
+}
+
+.shadowbox {
+    display: none;
 }
