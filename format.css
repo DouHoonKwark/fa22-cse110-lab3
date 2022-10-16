@@ -1,3 +1,5 @@
+/* set the big titles */
+
 * {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -51,7 +53,7 @@ h4 {
     padding: 0.2em;
 }
 
-.term {
+b.term {
     font-size: 1.5vw;
     color:rgb(160, 28, 100);
     padding: 0.2em;
@@ -62,7 +64,7 @@ h4 {
     font-size: 5vw;
 }
 
-/* set the basic colors */
+/* set the basic */
 
 
 .page-header {
@@ -82,6 +84,7 @@ nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     margin-top: 5px;
 }
@@ -150,6 +153,18 @@ a:active {
     
 }
 
+p[style] {
+    text-align: center;
+}
+
+option[value="first"] {
+    color: red;
+}
+
+option[value="third"] {
+    color: rgb(34, 0, 255);
+}
+
 #bus-text {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -160,7 +175,7 @@ a:active {
     max-width: 350px;
 }
 
-#emp {
+p strong {
     text-decoration: green wavy underline;
     display: block;
 }
@@ -235,6 +250,20 @@ a:active {
     min-width: 150px;
 }
 
+/* using different ways of selecting */
+
 .shadowbox {
     display: none;
+}
+
+strong, summary {
+    color:rgb(16, 56, 106);
+}
+
+summary + p {
+    color:hsl(134, 91%, 23%);
+}
+
+p ~ p {
+    color: hsl(134, 56%, 42%);
 }
